@@ -1,0 +1,9 @@
+<div class="welcome">
+	<h1>BLOG TIME</h1>
+</div>
+<br>
+<% @posts.each do |post| %>
+	<h2><%= link_to post.title, post%></h2>
+	<p><%= post.created_at.strftime("%B %d, %Y") %></p>
+	<br>
+<% end %>

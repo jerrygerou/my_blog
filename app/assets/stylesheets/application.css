@@ -1,0 +1,194 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body {
+  font-family: 'Lora', 'Times New Roman', serif;
+  font-size: 20px;
+  color: #333333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  margin-left: 20px;
+
+}
+
+p {
+  margin-left: 20px
+
+}
+
+a {
+  color: #333333;
+  text-decoration: none;
+}
+
+a:hover {
+  color: orange;
+}
+
+a img:hover,
+a img:focus {
+  cursor: zoom-in;
+}
+
+blockquote {
+  color: #777777;
+  font-style: italic;
+}
+
+nav a {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+nav {
+  background-color: black;
+  padding: 10px;
+  width: 100%;
+  position: fixed;
+}
+
+nav li {
+  display: inline;
+  margin-right: 10px;
+  padding-right: 20px;
+  padding-left: 10px;
+}
+
+
+.container {
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+
+.quac_body input[type=textarea]{
+	columns: 50;
+}
+
+.qac_body input[type=text]{
+    width: 300px;
+    padding: 5px 5px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: .75em;
+}
+
+.welcome {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 1.2),
+      rgba(100, 75, 0, 0.4)
+    ),
+    url(http://i.huffpost.com/gen/3924840/images/n-TYPING-FAST-large570.jpg);
+    background-size: 125%;
+  height: 400px;
+  margin-top: -35px;
+}
+
+.welcome h1{
+  padding-top: 180px;
+  color: white;
+  font-size: 2em;
+  text-align: center
+}
+
+.welcome h3{
+  padding-top: 5px;
+  color: white;
+  font-size: 1.5em;
+  text-align: center
+}
+
+.questions_on_index p{
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333333;
+  text-decoration: none;
+  padding-left: 20px;
+  margin-top: 15px;
+
+}
+
+.action_buttons {
+  padding: 20px;
+}
+
+.login {
+  margin-left: 20px;
+}
+
+.login input[type=text], [type=password], [type=email] {
+    max-width: 150px;
+    padding: 5px 5px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: .75em;
+}
+
+input[type=submit] {
+    background-color: #3f4042;
+    border-radius:3px;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    border: solid black;
+    margin-left: 30px;
+}
+
+.logout {
+  float: right;
+  padding-right: 40px;
+  font-size: 16px;
+  margin-top: -5px;
+}
+
+footer {
+	height: 30px;
+	background-color: black;
+	width: 100%;
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	font-size: 0.75em;
+	bottom: 0;
+	position: fixed;
+}
+
+.field_with_errors {
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+input[type=textarea]{
+	columns: 50;
+}
+
+input[type=text]{
+    width: 300px;
+    padding: 5px 5px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: .75em;
+}

@@ -1,0 +1,12 @@
+<div class="container">
+
+	<h1><%= @post.title %></h1>
+	<br>
+	<p>Submitted <%= time_ago_in_words(@post.created_at) %> ago 
+	| <%= link_to "Edit", edit_post_path(@post) %> 
+	| <%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Really? But it's such a good post!"} %></p>
+
+	<br>
+	<p><%= @post.body %></p>
+	<br>
+</div>
