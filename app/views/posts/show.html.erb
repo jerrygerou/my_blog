@@ -9,4 +9,8 @@
 	<br>
 	<p><%= @post.body %></p>
 	<br>
+	<p><%= image_tag @post.image.url(:medium) %></p>
+	<p><%= @post.image.name %></p>
+
+	<br>
 </div>
