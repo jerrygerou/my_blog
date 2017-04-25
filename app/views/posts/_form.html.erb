@@ -1,4 +1,4 @@
-<%= form_for @post do |f| %>
+<%= form_for @post, html: { multipart: true } do |f| %>
 
 	<% if @post.errors.any? %>
         <% @post.errors.full_messages.each do |error| %>
@@ -16,7 +16,10 @@
 		<%= f.text_area :body %>
 	</p>
 	<br>
+	<p><%= f.file_field :image, as: :file  %></p>
+	<p><%= link_to image_tag(@post.image.url(:med)), @post.image.url %></p>
 	<p>
+	<br>
 		<%= f.submit %>
 	</p>
 <% end %>
